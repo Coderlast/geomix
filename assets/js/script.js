@@ -35,6 +35,20 @@ const sliderBanner = () => {
     });
 };
 
+const sliderTechSupport = () => {
+    const swiper = new Swiper('.swiper-tech-support', {
+        direction: 'horizontal',
+        loop: true,  
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+};
+
 const sliderDecisions = () => {
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
