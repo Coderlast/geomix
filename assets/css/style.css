@@ -732,6 +732,7 @@ body.active-menu {
     margin: -200px;
 
 }
+/* carousel-container */
 
 /*  */
 .consulting__layout {
@@ -759,6 +760,18 @@ body.active-menu {
     margin-top: 35px;
     display: flex;
     flex-direction: column;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.button-container img {
+    width: 35px;
+    object-fit : none;
 }
 
 .consulting__layout__des .btn-morder {
@@ -810,9 +823,56 @@ body.active-menu {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 24px;
-    padding: 10px;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
+.consulting__layout__slider .bg-light-integration{
+    background: url("/assets/img/card 3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.consulting__layout__slider .bg-light-economic{
+    background: url("/assets/img/card 4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.consulting__layout__slider .bg-gradinet {
+    background: url("/assets/img/card 2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.consulting__layout__slider .bg-gradinet .title {
+    color: #fff;
+}
+
+
+.consulting__layout__slider .swiper-slide .box{
+    width: 446px;
+    height: 692px;
+    gap: 40px;
+    opacity: 0px;
+
+    
+}
+
+.consulting__layout__slider .swiper-slide .title{
+
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.6px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    
+}
+
+
 /* img */
 
 .consulting__layout__slider .swiper-slide .button-container {
@@ -831,19 +891,17 @@ body.active-menu {
     position: relative;
     overflow: hidden;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    border: #000 1px solid;
 }
 
-.styled-button:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 10px;
-    height: 100%;
-    background-color: #000;
-    clip-path: polygon(0 0, 100% 100%, 0 100%);
+.styled-button-light {
+    background: none;
+    color: #ffffff; /* Text color */
+    font-size: 16px; /* Adjust font size */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 30px; /* Rounded corners */
+    border: #ffffff 1px solid;
 }
-
 
 .consulting__layout__slider .swiper-slide span {
     color: #000;
@@ -855,16 +913,90 @@ body.active-menu {
 }
 
 .consulting__layout__slider .swiper-slide li{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .consulting__layout__slider .swiper-slide li img {
     width: 15px;
 }
 
-
-
 /*  */
+
+.learning__layout{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    color: #fff;
+}
+
+.learning__layout .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.learning__layout .title {
+   color: #fff;
+}
+
+
+.learning__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 10px 0;
+
+    cursor: pointer;
+    padding: 20px;
+
+    border-radius: 20px;
+    color: #fff;
+}
+
+
+.learning__row .box{
+    width: 531px;
+    height: 122px;
+   
+    background: linear-gradient(112.91deg, rgba(255, 255, 255, 0) 111.71%, rgba(255, 255, 255, 0.51) 3.51%);
+    backdrop-filter: blur(20px);
+
+    box-shadow: 14.65px 17.58px 29.29px 0px rgba(0, 0, 0, 0.384);
+    border-radius: 20px; 
+    margin-left: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.learning__layout .box .details{
+    flex-direction: row;
+}
+.learning__row span {
+    color: #8CC5F1;
+    font-size: 3.5rem;
+    font-weight: 200;
+}
+
+.learning__row h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 36px;
+    letter-spacing: 0.36px;
+}
+
+.learning__row h1:first-child {
+    padding: 7px 0;
+}
+
+
+
 /*  */
 .product__layout .mySwiper .swiper-slide {
     width: 390px !important;
@@ -896,7 +1028,8 @@ body.active-menu {
 }
 
 .product__layout {
-    margin-top: 52px;
+    margin-top: 152px;
+    margin-bottom: 152px;
 }
 
 .product__layout .swiper {
@@ -2199,6 +2332,13 @@ hr.active {
 
 /* form style */
 
+.form__layout__servise {
+    padding-top: 140px;
+    position: relative;
+}
+
+
+
 .form__layout {
     padding-top: 140px;
 
@@ -2308,7 +2448,7 @@ hr.active {
     border-radius: 44px;
     border: 1px white solid;
     color: white;
-    padding: 12px 65px;
+    padding: 12px 60px;
     cursor: pointer;
 }
 
